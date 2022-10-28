@@ -25,7 +25,7 @@ export const getStaticProps = async (context: GetStaticPropsContext<{ id: string
       trpcState: ssg.dehydrate(),
       id,
     },
-    revalidate: 1,
+    revalidate: 10,
   };
 };
 
